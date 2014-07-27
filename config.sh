@@ -13,12 +13,12 @@
 export LANG="en_US.UTF-8"
 
 # Remote peer configuration
-REMOTE_HOST='10.10.4.126'
-REMOTE_USER='hadoop'
-REMOTE_DIR='/home/hadoop/logs'
+REMOTE_HOST='remote.host.domain'
+REMOTE_USER='user'
+REMOTE_DIR='/remote/path/to/data/files'
 
 # Local configuration
-LOCAL_DIR='/home/hadoop/logs'
+LOCAL_DIR='/local/path/to/data/files'
 TX_FILE=$REMOTE_HOST".tx"
 LOCK_FILE=$REMOTE_HOST".lock"
 LOG_FILE_SUFFIX='.log'
@@ -42,9 +42,9 @@ FATAL=' [FAL]'
 # 4. ln -s /usr/local/sendEmail-v1.56 /usr/local/sendEmail
 #######################################################################
 SEND_MAIL='/usr/local/bin/sendEmail'
-f="Minutely Sync Alert<from@from.mail.domain>"
+f="Minutely Sync Aadmin<from@from.mail.domain>"
 t="recv1@to.mail.domain recv2@to.mail.domain" 
-u="[Sync alert: "`date +"%Y-%m-%d %H:%M:%S"`"]"
+u="[Minutely Sync Alert: "`date +"%Y-%m-%d %H:%M:%S"`"]"
 s="smtp.from.mail.domain"
 xu="user"
-xp="passwprd"
+xp="password"
