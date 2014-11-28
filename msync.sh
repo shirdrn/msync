@@ -93,7 +93,7 @@ function unlock() {
 		echo `date +"%Y-%m-%d %H:%M:%S"`"$INFO Unlocked!"
 	else
 		echo `date +"%Y-%m-%d %H:%M:%S"`"$FATAL Fail to unlock!"
-		send_email "Sync workspace was locked, please check manually!!!"
+		send_email "Sync workspace was locked, please check! Solve the problem, plz delete lock files`pwd`/*.lock manually!!! "
 	fi
 }
 
